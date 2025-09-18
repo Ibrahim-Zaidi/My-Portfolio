@@ -1,0 +1,18 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 
+    This SVG creates an "IZ" monogram logo where the letters intersect.
+    - The viewBox="0 0 100 100" creates a scalable coordinate system.
+    - The <g> element groups the paths and applies a stroke style to both.
+    - The first path draws the letter "Z".
+    - The second path draws the letter "I".
+    - The stroke-linecap="round" and stroke-linejoin="round" give it a softer, more modern feel.
+  -->
+  <title>Ibrahim Zaidi Logo</title>
+  <g stroke="#818cf8" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+    <!-- The "Z" path, broken into two segments to allow the "I" to pass through -->
+    <path d="M20 25 H 80 L 55 65" />
+    <path d="M45 35 L 20 75 H 80" />
+    <!-- The "I" path, drawn as a simple vertical line -->
+    <path d="M50 15 V 85" />
+  </g>
+</svg>
