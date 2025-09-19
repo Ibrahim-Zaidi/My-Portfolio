@@ -1,12 +1,15 @@
 import { useState } from "react";
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 
 function AppLayout() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const stylingButton = "text-amber-50 hover:text-blue-200";
+
+  const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-gray-700">
-      <header className="absolute inset-x-0 top-0 z-1">
+    <div className="min-h-screen bg-gray-700 flex flex-col gap-1">
+      <header className="absolute inset-x-0 top-0 z-1 border-b border-gray-900">
         <nav
           className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
           aria-label="Global"
@@ -20,7 +23,6 @@ function AppLayout() {
               className="-m-2.5 flex items-center justify-center rounded-md p-2.5 text-gray-400"
               onClick={() => setMobileMenuOpen((isOpen) => !isOpen)}
             >
-              <span className="sr-only">Open main menu</span>
               <svg
                 className="h-6 w-6"
                 fill="none"
@@ -38,15 +40,31 @@ function AppLayout() {
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-10">
-            <button className="text-amber-50 hover:text-blue-200">Home</button>
-            <button className="text-amber-50 hover:text-blue-200">About</button>
-            <button className="text-amber-50 hover:text-blue-200">
+            <button className={stylingButton} onClick={() => navigate("/")}>
+              Home
+            </button>
+            <button
+              className={stylingButton}
+              onClick={() => navigate("/about")}
+            >
+              About
+            </button>
+            <button
+              className={stylingButton}
+              onClick={() => navigate("/skills")}
+            >
               Skills
             </button>
-            <button className="text-amber-50 hover:text-blue-200">
+            <button
+              className={stylingButton}
+              onClick={() => navigate("/projects")}
+            >
               Projects
             </button>
-            <button className="text-amber-50 hover:text-blue-200">
+            <button
+              className={stylingButton}
+              onClick={() => navigate("/contact")}
+            >
               Contact
             </button>
           </div>
@@ -91,13 +109,13 @@ function AppLayout() {
                 </button>
               </div>
               <div className="mt-6 flow-root">
-                <div className="-my-6 divide-y divide-gray-500/25">
-                  <div className="space-y-2 py-6">
-                    <button>Home</button>
-                    <button>About</button>
-                    <button>Skills</button>
-                    <button>Projects</button>
-                    <button>Contact</button>
+                <div className="-my-4 divide-y divide-gray-500/25">
+                  <div className="space-y-2 py-6 flex flex-col gap-8">
+                    <button className={stylingButton}>Home</button>
+                    <button className={stylingButton}>About</button>
+                    <button className={stylingButton}>Skills</button>
+                    <button className={stylingButton}>Projects</button>
+                    <button className={stylingButton}>Contact</button>
                   </div>
                   <div className="py-6">
                     <button className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-800">
