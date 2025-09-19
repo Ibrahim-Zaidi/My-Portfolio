@@ -3,6 +3,8 @@ import Hero from "./views/Hero/Hero";
 import AppLayout from "./views/AppLayout/AppLayout";
 import About from "./views/About/About";
 import Skills from "./views/Skills/Skills";
+import Contact from "./Contact/Contact";
+import Projects from "./views/Projects/Projects";
 // import Projects from "./views/Projects/Projects";
 // import Contact from "./views/Contact/Contact";
 
@@ -25,11 +27,11 @@ function App() {
         },
         {
           path: "/projects",
-          // element: <Projects />,
+          element: <Projects />,
         },
         {
           path: "/contact",
-          // element: <Contact />,
+          element: <Contact />,
         },
       ],
     },
