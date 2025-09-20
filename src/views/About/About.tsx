@@ -1,27 +1,34 @@
 function About() {
   return (
-    <div className="flex flex-col justify-center items-center gap-10 min-h-full bg-gray-900 text-white p-5 md:p-20 gap-17 ">
-      <div
-        className="flex flex-col gap-10                       transform transition-all duration-1000 ease-in-out
-                      translate-y-0 opacity-100
-                      animate-[slideInFromBottom_1s_ease-out]"
-      >
-        <h1 className="animate-[fadeIn_1.5s_ease-out_0.5s_both]  ">
-          A dim ... about me
+    <div className="flex flex-col justify-center items-center min-h-full bg-gray-900 text-white p-5 md:p-20">
+      <div className="max-w-3xl w-full space-y-10">
+        <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-500 animate-[slideInFromLeft_1.2s_ease-out]">
+          A Shade... of Who I Am
         </h1>
-        <p className="animate-[slideInFromLeft_1s_ease-out_0.8s_both]">
+
+        <p className="text-lg text-gray-300 leading-relaxed animate-[slideInFromLeft_1s_ease-out_0.8s_both]">
           I go by Zaidi Ibrahim Younes, a third year computer science student at
           the university of Algiers. I am a fullstack web developer with a keen
           interest in building web applications that are not only functional but
           also user-friendly and visually appealing.
         </p>
-      </div>
-      <div className="animate-[slideInFromRight_1s_ease-out_1.2s_both]">
-        <h1>My experience</h1>
-        <div>
-          2022 - present: Computer Science Student at the University of Algiers
+
+        <div className="pt-8 border-t border-gray-800 animate-[slideInFromLeft_1s_ease-out_1.5s_both]">
+          <h2 className="text-2xl font-semibold text-indigo-400 mb-4">
+            My experience
+          </h2>
+
+          <div className="space-y-4">
+            <div className="flex flex-col md:flex-row md:items-center">
+              <span className="text-indigo-300 font-medium md:w-32">
+                2022 - present
+              </span>
+              <span className="text-gray-300">
+                Computer Science Student at the University of Algiers
+              </span>
+            </div>
+          </div>
         </div>
-        <div>2023 - present: Freelance Fullstack Web Developer</div>
       </div>
     </div>
   );

@@ -1,11 +1,17 @@
-import { useState } from "react";
+import { useReducer, useState } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 
 function AppLayout() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const stylingButton = "text-amber-50 hover:text-blue-200";
-
   const navigate = useNavigate();
+
+  function toggleSwitching(text: string) {
+    console.log(text);
+    navigate(text === "Home" ? "/" : text.toLowerCase());
+    setMobileMenuOpen(false);
+  }
+
+  const stylingButton = "text-amber-50 hover:text-blue-200";
 
   return (
     <div className="h-full flex flex-col ">
@@ -40,30 +46,33 @@ function AppLayout() {
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-10">
-            <button className={stylingButton} onClick={() => navigate("/")}>
+            <button
+              className={stylingButton}
+              onClick={(e) => toggleSwitching(e.currentTarget.textContent)}
+            >
               Home
             </button>
             <button
               className={stylingButton}
-              onClick={() => navigate("/about")}
+              onClick={(e) => toggleSwitching(e.currentTarget.textContent)}
             >
               About
             </button>
             <button
               className={stylingButton}
-              onClick={() => navigate("/skills")}
+              onClick={(e) => toggleSwitching(e.currentTarget.textContent)}
             >
               Skills
             </button>
             <button
               className={stylingButton}
-              onClick={() => navigate("/projects")}
+              onClick={(e) => toggleSwitching(e.currentTarget.textContent)}
             >
               Projects
             </button>
             <button
               className={stylingButton}
-              onClick={() => navigate("/contact")}
+              onClick={(e) => toggleSwitching(e.currentTarget.textContent)}
             >
               Contact
             </button>
@@ -111,9 +120,30 @@ function AppLayout() {
               <div className="mt-6 flow-root">
                 <div className="-my-4 divide-y divide-gray-500/25">
                   <div className="space-y-2 py-6 flex flex-col gap-8">
-                    <button className={stylingButton}>Home</button>
-                    <button className={stylingButton}>About</button>
-                    <button className={stylingButton}>Skills</button>
+                    <button
+                      className={stylingButton}
+                      onClick={(e) =>
+                        toggleSwitching(e.currentTarget.textContent)
+                      }
+                    >
+                      Home
+                    </button>
+                    <button
+                      className={stylingButton}
+                      onClick={(e) =>
+                        toggleSwitching(e.currentTarget.textContent)
+                      }
+                    >
+                      About
+                    </button>
+                    <button
+                      className={stylingButton}
+                      onClick={(e) =>
+                        toggleSwitching(e.currentTarget.textContent)
+                      }
+                    >
+                      Skills
+                    </button>
                     <button className={stylingButton}>Projects</button>
                     <button className={stylingButton}>Contact</button>
                   </div>
@@ -185,7 +215,7 @@ function AppLayout() {
             </svg>
           </a>
           <a
-            href="mailto:your.email@example.com"
+            href="mailto:ibrahim.zaidi@univ-alger.dz"
             className="text-gray-400 hover:text-red-400 transition-colors"
           >
             <svg

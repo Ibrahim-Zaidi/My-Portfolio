@@ -5,8 +5,6 @@ import About from "./views/About/About";
 import Skills from "./views/Skills/Skills";
 import Contact from "./Contact/Contact";
 import Projects from "./views/Projects/Projects";
-// import Projects from "./views/Projects/Projects";
-// import Contact from "./views/Contact/Contact";
 
 function App() {
   const router = createBrowserRouter([
