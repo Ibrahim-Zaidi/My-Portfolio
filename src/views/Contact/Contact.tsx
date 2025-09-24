@@ -7,22 +7,24 @@ function Contact() {
     message: "",
   });
 
-  const handleChange = (e) => {
+  function handleChange(
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
       [name]: value,
     }));
-  };
+  }
 
-  const handleSubmit = (e) => {
+  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     // Replace with your form submission logic
     console.log("Form submitted:", formData);
     // You could add email service integration here (EmailJS, Formspree, etc.)
     alert("Message sent! I'll get back to you soon.");
     setFormData({ name: "", email: "", message: "" });
-  };
+  }
 
   return (
     <div className="flex flex-col justify-center items-center min-h-full bg-gray-900 text-white p-5 md:p-10">
@@ -31,12 +33,12 @@ function Contact() {
 
         <form
           onSubmit={handleSubmit}
-          className="space-y-6 animate-[slideInFromBottom_1s_ease-out_0.3s_both]"
+          className="space-y-6 gap-2 animate-[slideInFromBottom_1s_ease-out_0.3s_both]"
         >
           <div>
-            <label htmlFor="name" className="block text-sm font-medium mb-2">
+            {/* <label htmlFor="name" className="block text-sm font-medium mb-2">
               Your Name
-            </label>
+            </label> */}
             <input
               type="text"
               id="name"
@@ -45,14 +47,14 @@ function Contact() {
               onChange={handleChange}
               required
               className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
-              placeholder="John Doe"
+              placeholder="Write your name"
             />
           </div>
 
           <div>
-            <label htmlFor="email" className="block text-sm font-medium mb-2">
+            {/* <label htmlFor="email" className="block text-sm font-medium mb-2">
               Your Email
-            </label>
+            </label> */}
             <input
               type="email"
               id="email"
@@ -61,14 +63,14 @@ function Contact() {
               onChange={handleChange}
               required
               className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none"
-              placeholder="john@example.com"
+              placeholder="Write your email"
             />
           </div>
 
           <div>
-            <label htmlFor="message" className="block text-sm font-medium mb-2">
+            {/* <label htmlFor="message" className="block text-sm font-medium mb-2">
               Your Message
-            </label>
+            </label> */}
             <textarea
               id="message"
               name="message"
@@ -77,7 +79,7 @@ function Contact() {
               required
               rows={6}
               className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none resize-none"
-              placeholder="I'd like to discuss a project..."
+              placeholder="send me a message"
             />
           </div>
 

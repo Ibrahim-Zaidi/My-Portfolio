@@ -3,7 +3,7 @@ import Hero from "./views/Hero/Hero";
 import AppLayout from "./views/AppLayout/AppLayout";
 import About from "./views/About/About";
 import Skills from "./views/Skills/Skills";
-import Contact from "./Contact/Contact";
+import Contact from "./views/Contact/Contact";
 import Projects from "./views/Projects/Projects";
 
 function App() {
