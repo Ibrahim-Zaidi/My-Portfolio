@@ -6,9 +6,8 @@ function AppLayout() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const navigate = useNavigate();
 
-  function toggleSwitching(text: string) {
-    console.log(text);
-    navigate(text === "Home" ? "/" : text.toLowerCase());
+  function toggleSwitching(text: string | null) {
+    navigate(text === "Home" ? "/" : text ? text.toLowerCase() : "/");
     setMobileMenuOpen(false);
   }
 
