@@ -9,17 +9,17 @@ type Project = {
 };
 
 const projects: Project[] = [
-  {
-    id: 1,
-    title: "E-commerce Platform",
-    description:
-      "A full-featured e-commerce platform with product catalog, shopping cart, and secure checkout.",
-    image:
-      "https://images.unsplash.com/photo-1593642532744-d377ab507dc8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
-    techStack: ["React", "Node.js", "MongoDB", "Express"],
-    liveUrl: "https://project1.com",
-    githubUrl: "https://github.com/yourusername/project1",
-  },
+  // {
+  //   id: 1,
+  //   title: "E-commerce Platform",
+  //   description:
+  //     "A full-featured e-commerce platform with product catalog, shopping cart, and secure checkout.",
+  //   image:
+  //     "https://images.unsplash.com/photo-1593642532744-d377ab507dc8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
+  //   techStack: ["React", "Node.js", "MongoDB", "Express"],
+  //   liveUrl: "https://project1.com",
+  //   githubUrl: "https://github.com/yourusername/project1",
+  // },
   {
     id: 2,
     title: "Real-time Chat Application",

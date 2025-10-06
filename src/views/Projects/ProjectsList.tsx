@@ -8,11 +8,11 @@ function ProjectsList() {
   }
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="flex justify-center align-center gap-8">
       {projects.map((project) => (
         <div
           key={project.id}
-          className="bg-gray-800/40 rounded-xl overflow-hidden border border-gray-700/50 shadow-lg hover:shadow-indigo-500/10 transition-all duration-300 transform hover:-translate-y-2"
+          className="bg-gray-800/40 rounded-xl overflow-hidden border border-gray-700/50 shadow-lg hover:shadow-indigo-500/10 transition-all duration-300 transform hover:-translate-y-2 w-xl "
         >
           {/* Project Image */}
           <div className="h-48 overflow-hidden">
