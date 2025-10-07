@@ -39,10 +39,11 @@ const projects: Project[] = [
     techStack: [
       "React",
       "TypeScript",
-      "TailwindCSS",
+
       "Express",
       "Prisma",
       "PostgreSQL",
+      "CSS",
     ],
     liveUrl: "#",
     githubUrl: "https://github.com/Ibrahim-Zaidi/Bookify",

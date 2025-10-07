@@ -4,6 +4,7 @@ import projects from "../../Utils/Projects";
 function ProjectsList() {
   function findTechIcon(techName: string): string | undefined {
     const tech = technologies.find((t) => t.name === techName);
+
     return tech?.icon;
   }
 

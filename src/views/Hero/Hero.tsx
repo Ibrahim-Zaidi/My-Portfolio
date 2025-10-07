@@ -9,8 +9,8 @@ function Hero() {
             Hi, I'm <span className="text-indigo-400">Ibrahim Zaidi</span>
           </h1>
           <p className="mt-6 text-lg leading-8 text-gray-300">
-            A fullstack web deveoper, figuring out robust solutions to
-            sophisticated problems.
+            third year computer systems student and a fullstack web developer,
+            figures out robust solutions to sophisticated problems.
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <a
