@@ -2,9 +2,9 @@ import technologies from "../../Utils/TechProvider";
 import projects from "../../Utils/Projects";
 
 function ProjectsList() {
-  function findTechIcon(techName: string): string {
+  function findTechIcon(techName: string): string | undefined {
     const tech = technologies.find((t) => t.name === techName);
-    return tech?.icon || `https://via.placeholder.com/30?text=${techName[0]}`;
+    return tech?.icon;
   }
 
   return (

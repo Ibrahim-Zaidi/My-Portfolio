@@ -1,4 +1,14 @@
-const MyPersonalInfo = {
+type PersonalInfo = {
+  name: string;
+  profiles: {
+    github: string;
+    linkedin: string;
+    twitter: string;
+    email: string;
+  };
+};
+
+const MyPersonalInfo: PersonalInfo = {
   name: "Ibrahim Zaidi",
   profiles: {
     github: "https://github.com/Ibrahim-Zaidi",

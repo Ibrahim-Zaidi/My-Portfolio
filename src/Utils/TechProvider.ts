@@ -1,6 +1,6 @@
 type Technology = {
   name: string;
-  icon: string;
+  icon: string | undefined;
 };
 
 const technologies: Technology[] = [
@@ -43,6 +43,18 @@ const technologies: Technology[] = [
   {
     name: "PostgreSQL",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+  },
+  {
+    name: "Socket.IO",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original.svg",
+  },
+  {
+    name: "Prisma",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg",
+  },
+  {
+    name: "daisyUI",
+    icon: "https://img.daisyui.com/images/daisyui/mark-static.svg",
   },
 ];
 
