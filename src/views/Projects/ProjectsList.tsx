@@ -9,29 +9,26 @@ function ProjectsList() {
   }
 
   return (
-    <div className="flex justify-center align-center gap-8">
+    <div className="flex justify-center align-center flex-wrap gap-6">
       {projects.map((project) => (
         <div
           key={project.id}
           className="bg-gray-800/40 rounded-xl overflow-hidden border border-gray-700/50 shadow-lg hover:shadow-indigo-500/10 transition-all duration-300 transform hover:-translate-y-2 w-xl "
         >
-          {/* Project Image */}
-          <div className="h-48 overflow-hidden">
+          <div className="h-70 overflow-hidden bg-slate-800/70">
             <img
               src={project.image}
               alt={project.title}
-              className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500"
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-500 bg-gray-800"
             />
           </div>
 
-          {/* Project Content */}
           <div className="p-6">
             <h3 className="text-xl font-semibold mb-2 text-white">
               {project.title}
             </h3>
             <p className="text-gray-300 mb-4 text-sm">{project.description}</p>
 
-            {/* Tech Stack */}
             <div className="mb-4">
               <h4 className="text-sm text-gray-400 mb-2">Technologies Used:</h4>
               <div className="flex flex-wrap gap-2">
@@ -56,9 +53,8 @@ function ProjectsList() {
               </div>
             </div>
 
-            {/* Project Links */}
             <div className="flex justify-between mt-4 pt-4 border-t border-gray-700/50">
-              {project.liveUrl && (
+              {/* {project.liveUrl && (
                 <a
                   href={project.liveUrl}
                   target="_blank"
@@ -79,7 +75,7 @@ function ProjectsList() {
                   </svg>
                   Live Demo
                 </a>
-              )}
+              )} */}
               {project.githubUrl && (
                 <a
                   href={project.githubUrl}

@@ -77,7 +77,7 @@ function AppLayout() {
               Contact
             </button>
           </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+          {/* <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <button className="text-sm font-semibold leading-6 text-white">
               <img
                 src="/sun-color-icon.svg"
@@ -85,7 +85,7 @@ function AppLayout() {
                 className="inline-block h-5 w-5"
               />
             </button>
-          </div>
+          </div> */}
         </nav>
         {mobileMenuOpen && (
           <div className="lg:hidden" role="dialog" aria-modal="true">
@@ -144,10 +144,24 @@ function AppLayout() {
                     >
                       Skills
                     </button>
-                    <button className={stylingButton}>Projects</button>
-                    <button className={stylingButton}>Contact</button>
+                    <button
+                      className={stylingButton}
+                      onClick={(e) =>
+                        toggleSwitching(e.currentTarget.textContent)
+                      }
+                    >
+                      Projects
+                    </button>
+                    <button
+                      className={stylingButton}
+                      onClick={(e) =>
+                        toggleSwitching(e.currentTarget.textContent)
+                      }
+                    >
+                      Contact
+                    </button>
                   </div>
-                  <div className="py-6">
+                  {/* <div className="py-6">
                     <button className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-800">
                       <img
                         src="/sun-color-icon.svg"
@@ -155,7 +169,7 @@ function AppLayout() {
                         className="inline-block h-5 w-5"
                       />
                     </button>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
