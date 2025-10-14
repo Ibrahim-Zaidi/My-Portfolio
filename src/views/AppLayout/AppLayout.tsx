@@ -15,6 +15,7 @@ function AppLayout() {
 
   return (
     <div className="h-full flex flex-col ">
+      <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-gray-900/50 to-purple-500/0"></div>
       <header className="z-10 ">
         <nav
           className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
@@ -77,15 +78,6 @@ function AppLayout() {
               Contact
             </button>
           </div>
-          {/* <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <button className="text-sm font-semibold leading-6 text-white">
-              <img
-                src="/sun-color-icon.svg"
-                alt="Light Mode"
-                className="inline-block h-5 w-5"
-              />
-            </button>
-          </div> */}
         </nav>
         {mobileMenuOpen && (
           <div className="lg:hidden" role="dialog" aria-modal="true">
@@ -161,15 +153,6 @@ function AppLayout() {
                       Contact
                     </button>
                   </div>
-                  {/* <div className="py-6">
-                    <button className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-white hover:bg-gray-800">
-                      <img
-                        src="/sun-color-icon.svg"
-                        alt="Logo"
-                        className="inline-block h-5 w-5"
-                      />
-                    </button>
-                  </div> */}
                 </div>
               </div>
             </div>
