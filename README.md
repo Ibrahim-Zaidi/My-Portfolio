@@ -1,7 +1,7 @@
 <h1>Portfolio Website </h1>
  
 <h2>Summary</h2>
-<p>a website to demonstrate the projects i have built along with the </p>
+<p>this is My Personal website, built using React.js, Typescript and TailwindCSS </p>
 
 <h2>Pages</h2>
 <ul>
