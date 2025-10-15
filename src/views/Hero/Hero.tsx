@@ -16,7 +16,7 @@ function Hero() {
 
           <p className="mt-6 text-lg leading-8 text-gray-300 sm:text-xl animate-[fadeIn_1.2s_ease-out_0.3s_both]">
             Third Year Computer Systems Student and a fullstack web developer,
-            figuring out robust solutions to sophisticated problems.
+            Aims to figure out robust solutions to sophisticated problems.
           </p>
 
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4 animate-[slideInFromBottom_1.2s_ease-out_0.5s_both]">

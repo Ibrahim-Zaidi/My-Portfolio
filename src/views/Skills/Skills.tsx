@@ -3,7 +3,7 @@ import TechGrid from "./TechGrid";
 
 function Skills() {
   return (
-    <div className="flex flex-col justify-center items-center min-h-full bg-gray-900 text-white p-5 md:p-20">
+    <div className="flex flex-col justify-center items-center min-h-full bg-gray-900 text-white p-5 md:p-20  mb-10">
       <div className="max-w-4xl w-full space-y-16">
         <div className="animate-[fadeIn_1s_ease-out]">
           <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-500 mb-10 text-center md:text-left">

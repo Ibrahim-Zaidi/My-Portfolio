@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div className="flex flex-col justify-center items-center min-h-full bg-gray-900 text-white p-5 md:p-20">
+    <div className="flex flex-col  items-center min-h-full bg-gray-900 text-white p-7 md:p-10 lg:p-20">
       <div className="max-w-3xl w-full space-y-10">
         <h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-500 animate-[slideInFromLeft_1.2s_ease-out]">
           A Shade... of Who I Am

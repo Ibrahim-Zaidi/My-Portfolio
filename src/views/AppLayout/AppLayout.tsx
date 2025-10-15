@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
 import Socials from "../Socials/Socials";
+import RoutingBtn from "./RoutingBtn";
 
 function AppLayout() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -11,10 +12,8 @@ function AppLayout() {
     setMobileMenuOpen(false);
   }
 
-  const stylingButton = "text-amber-50 hover:text-blue-200";
-
   return (
-    <div className="h-full flex flex-col ">
+    <div className="min-h-full flex flex-col ">
       <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 via-gray-900/50 to-purple-500/0"></div>
       <header className="z-10 ">
         <nav
@@ -47,36 +46,7 @@ function AppLayout() {
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-10">
-            <button
-              className={stylingButton}
-              onClick={(e) => toggleSwitching(e.currentTarget.textContent)}
-            >
-              Home
-            </button>
-            <button
-              className={stylingButton}
-              onClick={(e) => toggleSwitching(e.currentTarget.textContent)}
-            >
-              About
-            </button>
-            <button
-              className={stylingButton}
-              onClick={(e) => toggleSwitching(e.currentTarget.textContent)}
-            >
-              Skills
-            </button>
-            <button
-              className={stylingButton}
-              onClick={(e) => toggleSwitching(e.currentTarget.textContent)}
-            >
-              Projects
-            </button>
-            <button
-              className={stylingButton}
-              onClick={(e) => toggleSwitching(e.currentTarget.textContent)}
-            >
-              Contact
-            </button>
+            <RoutingBtn toggleSwitching={toggleSwitching} />
           </div>
         </nav>
         {mobileMenuOpen && (
@@ -112,46 +82,7 @@ function AppLayout() {
               <div className="mt-6 flow-root">
                 <div className="-my-4 divide-y divide-gray-500/25">
                   <div className="space-y-2 py-6 flex flex-col gap-8">
-                    <button
-                      className={stylingButton}
-                      onClick={(e) =>
-                        toggleSwitching(e.currentTarget.textContent)
-                      }
-                    >
-                      Home
-                    </button>
-                    <button
-                      className={stylingButton}
-                      onClick={(e) =>
-                        toggleSwitching(e.currentTarget.textContent)
-                      }
-                    >
-                      About
-                    </button>
-                    <button
-                      className={stylingButton}
-                      onClick={(e) =>
-                        toggleSwitching(e.currentTarget.textContent)
-                      }
-                    >
-                      Skills
-                    </button>
-                    <button
-                      className={stylingButton}
-                      onClick={(e) =>
-                        toggleSwitching(e.currentTarget.textContent)
-                      }
-                    >
-                      Projects
-                    </button>
-                    <button
-                      className={stylingButton}
-                      onClick={(e) =>
-                        toggleSwitching(e.currentTarget.textContent)
-                      }
-                    >
-                      Contact
-                    </button>
+                    <RoutingBtn toggleSwitching={toggleSwitching} />
                   </div>
                 </div>
               </div>

@@ -29,6 +29,14 @@ const technologies: Technology[] = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
   },
   {
+    name: "Redux",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg",
+  },
+  {
+    name: "daisyUI",
+    icon: "https://img.daisyui.com/images/daisyui/mark-static.svg",
+  },
+  {
     name: "Node.js",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
   },
@@ -45,16 +53,12 @@ const technologies: Technology[] = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
   },
   {
-    name: "Socket.IO",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original.svg",
-  },
-  {
     name: "Prisma",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg",
   },
   {
-    name: "daisyUI",
-    icon: "https://img.daisyui.com/images/daisyui/mark-static.svg",
+    name: "Socket.IO",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/socketio/socketio-original.svg",
   },
 ];
 

@@ -1,6 +1,6 @@
 function Socials() {
   return (
-    <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-20">
+    <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-20 ">
       <div className="flex items-center space-x-4 bg-gray-800/80 backdrop-blur-sm py-2 px-6 rounded-full border border-gray-700 shadow-lg">
         <a
           href="https://www.linkedin.com/in/ibrahim-zaidi-512a80243/"
