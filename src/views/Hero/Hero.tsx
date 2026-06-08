@@ -21,7 +21,7 @@ function Hero() {
 
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4 animate-[slideInFromBottom_1.2s_ease-out_0.5s_both]">
             <a
-              href="/ibrahimzaidicv.pdf"
+              href="/ibrahimzaidi_cv.pdf"
               download
               className="group relative rounded-lg bg-indigo-500 px-6 py-3 text-sm font-semibold text-white shadow-lg hover:bg-indigo-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-indigo-500/0"
             >
