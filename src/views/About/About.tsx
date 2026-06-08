@@ -18,13 +18,30 @@ function About() {
             My experience
           </h2>
 
-          <div className="space-y-4">
+          <div className="space-y-8">
+            <div className="flex flex-col md:flex-row md:items-start">
+              <span className="text-indigo-300 font-medium md:w-40 shrink-0 md:pt-1 mb-1 md:mb-0">
+                Oct 2025 - Jan 2026
+              </span>
+              <div className="flex-1">
+                <h3 className="text-lg font-semibold text-gray-200">
+                  Software Development Intern — Thynk Tech Dz
+                </h3>
+                <ul className="list-disc pl-5 text-gray-300 space-y-1 mt-2 text-sm md:text-base">
+                  <li>Developed a significant part of the backend infrastructure using Python, FastAPI, and SQLAlchemy.</li>
+                  <li>Implemented Role-Based Access Control (RBAC) to manage user permissions and data authorization.</li>
+                  <li>Containerized services with Docker to ensure consistency between local development and production environments.</li>
+                  <li>Assisted the engineering team with deployment and managing application pipelines on Sevalla.</li>
+                </ul>
+              </div>
+            </div>
+
             <div className="flex flex-col md:flex-row md:items-center">
-              <span className="text-indigo-300 font-medium md:w-32">
-                2022 - present
+              <span className="text-indigo-300 font-medium md:w-40 shrink-0">
+                2022 - Juin 2026
               </span>
               <span className="text-gray-300">
-                Computer Science Student at the University of Algiers
+                Bachelore degree in computer science at the University of Algiers 1
               </span>
             </div>
           </div>
